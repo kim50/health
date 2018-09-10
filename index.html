@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>기초대사량계산</title>
+</head>
+<body>
+
+	<input type="text" placeholder="몸무게를 입력하세요" size="20" id="myWeight">kg
+	
+	<input type="text" placeholder="키를 입력하세요" size="20" id="myHeight">cm
+	
+	<input type="text" placeholder="나이를 입력하세요" size="20" id="myAge">살
+	
+	<button id="but">기초대사량계산</button>
+	<div id="output" style="width: 400px; height: 400px; background: skyblue; color: white; text-align: center; line-height: 400px;">당신의 하루 기초대사량은?</div>
+
+	<script type="text/javascript">
+
+		but.onclick = function(){
+
+			var standardHealth = (66.47 + (13.75 *myWeight.value) + (5 + myHeight.value) - (6.76 + myAge.value);
+			var finalOutput = "당신의 기초대사량은 "  + standardHealth + "kcal 입니다.";
+
+			output.innerHTML = finalOutput;
+		}
+
+
+
+	</script>
+</body>
+</html>
